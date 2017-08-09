@@ -1,0 +1,29 @@
+{
+    "name": "larakit/lkng-attach",
+    "description": "[Larakit] [angular] Управление вложениями",
+    "keywords": [
+        "laravel 5",
+        "laravel",
+        "larakit"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Berdnikov",
+            "email": "aberdnikov@gmail.com"
+        }
+    ],
+    "require": {
+        "larakit/lk-twig": "*",
+        "larakit/ng-adminlte": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larakit\\": "src"
+        },
+        "files": [
+            "init.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
