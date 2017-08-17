@@ -33,6 +33,9 @@
                     $ctrl.load()();
                 }
             }, function () {
+                if($ctrl.load){
+                    $ctrl.load()();
+                }
             });
 
         };
