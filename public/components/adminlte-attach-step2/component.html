@@ -8,12 +8,17 @@
     <div class="box box-primary box-solid" ng-repeat="(name, block) in $ctrl.model.attaches_blocks">
         <div class="box-header ui-sortable-handle" style="cursor: move;">
             <i class="fa fa-paperclip"></i>
-            <h3 class="box-title">{{block.label}}</h3>
+            <div ng-if="block.max" class="pull-right">
+                Загружено: {{block.items.length}} из {{block.max}}
+            </div>
+            <h3 class="box-title">{{block.label}}
+            </h3>
         </div>
         <div class="box-body">
             <adminlte-uploader
                     on-complete-item="$ctrl.onCompleteItem"
                     exts="block.exts"
+                    ng-if="!block.max || block.items.length<block.max"
                     is-multiple="true"
                     url="block.url_upload"></adminlte-uploader>
             <div ng-if="block.ext" class="callout callout-info">

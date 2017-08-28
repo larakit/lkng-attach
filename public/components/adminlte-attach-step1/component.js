@@ -22,6 +22,8 @@
                 ariaLabelledBy: 'modal-title-bottom',
                 ariaDescribedBy: 'modal-body-bottom',
                 component: 'adminlteAttachStep2',
+                backdrop: 'static',
+                keyboard: false,
                 resolve: {
                     model: function () {
                         return $ctrl.model;
@@ -29,11 +31,11 @@
                 }
             });
             modalInstance.result.then(function (o) {
-                if($ctrl.load){
+                if ($ctrl.load) {
                     $ctrl.load()();
                 }
             }, function () {
-                if($ctrl.load){
+                if ($ctrl.load) {
                     $ctrl.load()();
                 }
             });
