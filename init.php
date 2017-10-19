@@ -12,9 +12,9 @@
 //      Регистрация компонента страницы
 //##################################################
 $components_directory = '/packages/larakit/lkng-attach/components/';
-\Larakit\NgAdminlte\LkNgComponent::register('adminlte-attach-step1', $components_directory);
-\Larakit\NgAdminlte\LkNgComponent::register('adminlte-attach-step2', $components_directory);
-\Larakit\NgAdminlte\LkNgComponent::register('adminlte-attach-step3', $components_directory);
+\Larakit\LkNgComponent::register('adminlte-attach-step1', $components_directory);
+\Larakit\LkNgComponent::register('adminlte-attach-step2', $components_directory);
+\Larakit\LkNgComponent::register('adminlte-attach-step3', $components_directory);
 
 
 \Larakit\StaticFiles\Manager::package('larakit/lkng-attach')
