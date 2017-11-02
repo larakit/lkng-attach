@@ -38,6 +38,7 @@
         $ctrl.actionEdit = function (file) {
             var modalInstance = $uibModal.open({
                 animation: true,
+                size: 'lg',
                 ariaLabelledBy: 'modal-title-bottom',
                 ariaDescribedBy: 'modal-body-bottom',
                 component: 'adminlteAttachStep3',

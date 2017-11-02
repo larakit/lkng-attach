@@ -19,6 +19,7 @@
         $ctrl.gotoStep2 = function () {
             var modalInstance = $uibModal.open({
                 animation: true,
+                size: 'lg',
                 ariaLabelledBy: 'modal-title-bottom',
                 ariaDescribedBy: 'modal-body-bottom',
                 component: 'adminlteAttachStep2',
